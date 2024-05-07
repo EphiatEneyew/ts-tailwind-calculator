@@ -1,0 +1,20 @@
+{
+  "name": "type-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsc --project tsconfig.json && find ./src -type f -name '*.js' -exec cp {} ./dist \\; && npx tailwindcss build src/main.css -o dist/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

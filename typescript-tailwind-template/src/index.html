@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ts-tailwind template</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="../dist/main.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 flex flex-col justify-center items-center h-screen">
+    <div class="p-8">
+      <div class="flex items-center">
+        <input id="display" class="p-4 text-right text-xl border border-gray-300 w-3/4" type="text" readonly>
+        <button class="p-4 text-xl text-white bg-green-500 w-1/4" onclick="clearDisplay()">AC</button>
+      </div>
+      
+      
+      
+      <div class="flex items-center m-0">
+        <div class="flex w-3/4 m-0 flex-col bg-black">
+          <div>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('9')">9</button>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('8')">8</button>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('7')">7</button>
+          </div>
+          <div>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('4')">4</button>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('5')">5</button>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('6')">6</button>
+          </div>
+          <div>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('1')">1</button>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('2')">2</button>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('3')">3</button>
+          </div>
+          <div>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('.')">.</button>
+            <button class="p-4 text-xl text-white w-1/4" onclick="addToDisplay('0')">0</button>
+            <button class="p-4 text-xl text-white w-1/4" onclick="calculate()">=</button>
+          </div>
+        </div>
+        <div class="bg-gray-400 w-1/4 flex flex-col">
+          <button class="p-4 text-xl text-white" onclick="addToDisplay('+')">+</button>
+          <button class="p-4 text-xl text-white" onclick="addToDisplay('-')">-</button>
+          <button class="p-4 text-xl text-white" onclick="addToDisplay('*')">*</button>
+          <button class="p-4 text-xl text-white" onclick="addToDisplay('/')">/</button>
+          
+        </div>
+      </div>
+    </div>
+    <script src="../dist/index.js"></script>
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+   
